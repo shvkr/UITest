@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" ng-app="everyDay">
+<head>
+	<meta charset="utf-8" />
+    <meta name="author" content="UI Test" />
+	<title>UI Test</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+	
+	<script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+
+</head>
+<body>
+<div class="container main_bg">
+	<div class="col-md-12" style="padding-right:0px;">
+		<div class="col-md-6" ng-controller="saveController">
+			<h5 class="heading1">FANTASTIC BARGAINS. UNIQUE FINDS.</h5>
+			<h3 style="color: #116CE0;">SENT STRAIGHT TO YOUR INBOX</h3>
+			<h5 class="heading2">Stay in the Know!</h5>
+			<p>Sign up for our emails and we'll send you personalized offers, updates on the hottest deals, and more</p>
+				<form role="form" name="everyday"  ng-submit="save();">
+					<div class="form-group">
+						<input class="form-control input-sm" ng-model="email" placeholder=" Email address" id="inputsm" type="email" required />
+					</div>
+					<button type="submit" class="btn btn-primary btn-block signup_btn">Sign up now</button>	
+				</form>
+		</div>
+		<div class="col-md-6" style="padding-right:0px;">
+			<img class="img-responsive img_custom" src="images/image_2.jpg"/>
+		</div>
+		
+	</div>
+	<div style="clear:both;"></div>
+	<div class="col-md-12 middle_txt" >EVERY DAY, FROM:
+	</div>
+	<div class="col-md-12 text-center" style="padding-bottom: 28px;">
+		<div class="col-md-4">
+			<img src="images/image_3.jpg"   alt="Cinque Terre"> 
+			<h4>UNIQUE ITEMS</h5> 
+			<h5>Discover something new and exciting</h5> 
+		</div>
+		<div class="col-md-4">
+			<img src="images/image_4.jpg"   alt="Cinque Terre"> 
+			<h4>A WORLD OF INSPIRATION</h5> 
+			<h5>Over 800 million listings to explore</h5> 
+		</div>
+		<div class="col-md-4">
+			<img src="images/image_1.jpg"  alt="Cinque Terre"> 
+			<h4>GREAT SAVINGS</h5> 
+			<h5>Limited-time deals added daily</h5> 
+		</div>
+	</div>
+	
+</div>
+<div class="container">
+	<div class="col-md-12 footer">
+		<h6 style="font-weight: bold; font-size: small;">Legal Footer here</h6>
+		<p style="font-size: 12px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<h6 style="font-weight: bold; font-size: small;">Nam aliquet metus pellentesque</h6>
+		<p style="font-size: 12px;">
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>
+	</div>
+</div>
+
+</body>
+</html>

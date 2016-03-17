@@ -1,0 +1,44 @@
+body{
+	font-family: Arial;
+	padding-top: 10px;
+	background-color: #f2f4f3;
+}
+
+
+.main_bg {
+	background-color: #fff;
+	padding-right:0px;
+}
+
+.img_custom{
+	width: 100%;
+}
+
+.heading1{
+	padding-top: 30px;
+    color: #116CE0;
+}
+
+.heading2{
+	color: black;
+    font-weight: bold;
+}
+
+.signup_btn{
+	background-color: #0064d3;
+    border-radius: 0px;
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+.middle_txt{
+	text-align: center;
+    padding: 26px;
+    font-size: 31px;
+    font-family: Segoe UI;
+}
+
+.footer {
+	padding-right: 0px;
+    padding-left: 0px;
+}
