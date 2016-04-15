@@ -272,3 +272,12 @@ Credits to [webpack-server-side-example](https://github.com/webpack/react-webpac
 License
 ===============
 MIT
+
+Process of creating Product Listing.
+------------------------------------
+
+The initial step is by adding “Product” in the Navigation menu, and then the next step will be configuring in the rout file “routes.jsx”. 
+In route.jsx file need to configure the Product.jsx, so then the actual functionality will applicable.
+This step will give a brief idea how the product page will get configured. In Product.jsx data that needs to be called before rendering the component it should be render from the server side to display the list data in the front end. 
+For this we need to create ProductList.jsx this file will collect the data and render with Product.jsx. 
+So for the other side of this project to display in UI (User Interface) we need to add a CSS style in Product.jsx, so at the end both the data and the design will display in proper way.
