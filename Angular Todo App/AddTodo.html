@@ -1,0 +1,80 @@
+
+			<div>
+                <ul >
+                    <li>
+                        <ul>
+                            <li><a href="" ng-click="AddTodos()">Add Todos</a></li>
+                            <li><a href="" ng-click="RemainingTodosss()">Remaining Todos</a></li>
+                            <li><a href="" ng-click="CompletedTodos()">Completed Todos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+			<div ng-hide="addTo">
+                
+
+<div class="headbox">
+<form role="form" ng-submit="addit(additem)">
+      <div class="row">
+        <input type="text" class="additem" ng-model="additem" ng-keyup="$event.keyCode == 13 ? addit() : null">
+        
+		<button type="submit" class="addit">Add Todo</button>
+      </div>
+</form>
+    </div>
+    <div class="bodybox">
+      <ul class="todolist">
+        <li ng-repeat="todo in alltodos">
+          <label for="item-{{$index}}" class="done-{{todo.done}}">
+            <input type="checkbox" ng-model="todo.done" id="item-{{$index}}">{{todo.todo}}
+          </label>
+        </li>
+      </ul>
+      <div class="filterrow">
+        <a href="#" class="allitems">Total Todos: {{totaltodos()}}</a>
+        <a href="#" class="todo">Remaining Todos: {{remainingtodos()}}</a>
+        <a href="#" class="completed">Completed Todos: {{completedtodos()}}</a>
+      </div>
+    </div>
+
+
+   
+            </div>
+			<div ng-show="remainTo">
+                
+
+    <div class="bodybox">
+      <ul class="todolist">
+        <li ng-repeat="todo in alltodos" ng-if='todo.done == false'>
+          <label for="item-{{$index}}" class="done-{{todo.done}}">
+            <input type="checkbox" ng-model="todo.done" id="item-{{$index}}">{{todo.todo}}
+          </label>
+        </li>
+      </ul>
+      
+    </div>
+	<div class="filterrow">
+        
+        <a href="#" class="todo">Remaining Todos: {{remainingtodos()}}</a>
+        
+      </div>
+            </div>
+			<div ng-show="compTo">
+                
+
+    <div class="bodybox">
+      <ul class="todolist">
+        <li ng-repeat="todo in alltodos" ng-if='todo.done == true'>
+          <label for="item-{{$index}}" class="done-{{todo.done}}">
+            <input type="checkbox" ng-model="todo.done" id="item-{{$index}}">{{todo.todo}}
+          </label>
+        </li>
+      </ul>
+      
+    </div>
+	<div class="filterrow">
+       
+        <a href="#" class="completed">Completed Todos: {{completedtodos()}}</a>
+      </div>
+            </div>
+
